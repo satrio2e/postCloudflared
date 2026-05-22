@@ -17,11 +17,11 @@ post cloudflared lewat raspi
 8. buat config
    - nano ~/.cloudflared/config.yml
 9. isi config
-   tunnel: UUID_TUNNEL
-   credentials-file: /home/pi/.cloudflared/UUID_TUNNEL.json
-   ingress:
+   - tunnel: UUID_TUNNEL
+   - credentials-file: /home/pi/.cloudflared/UUID_TUNNEL.json
+   - ingress:
       - hostname: [subDomain].menenyooo.my.id
-        service: http://localhost:1880 
+        - service: http://localhost:1880 
 
       - service: http_status:404
   10. isi UUID dengan UUID saat buat tunnel
